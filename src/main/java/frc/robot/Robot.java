@@ -5,14 +5,9 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
-import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-import edu.wpi.first.cameraserver.CameraServer;
-import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.cscore.UsbCamera;
+
 
 /**
  * The methods in this class are called automatically corresponding to each
@@ -36,17 +31,6 @@ public class Robot extends TimedRobot {
     // and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
-
-    // Start streaming the camera to the Driver Station
-    // UsbCamera camera = CameraServer.startAutomaticCapture();
-    // camera.setResolution(320, 240); // Adjust resolution as needed
-    // camera.setFPS(15); // Set frame rate
-    // Shuffleboard.getTab("Driver Station")
-    //     .add("USB Camera", CameraServer.getServer())
-    //     .withWidget(BuiltInWidgets.kCameraStream)
-    //     .withSize(4, 3) // Adjust size as needed
-    //     .withPosition(0, 0); // Adjust position as needed
-
   }
 
   /**
